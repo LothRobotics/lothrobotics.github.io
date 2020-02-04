@@ -624,7 +624,8 @@
     }
 }
 
-@media screen and (max-width:1400px) {
-.welcomediv {
-    position: unset;
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
