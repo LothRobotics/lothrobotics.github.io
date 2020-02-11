@@ -79,8 +79,9 @@
     justify-content: center;
     flex-direction: column;
     width: 900px;
-    background-color: #838383c4;
+    background-color: #83838383;
     height: 400px;
+    border-radius: 15px;
 }
 
 .insideheader {
