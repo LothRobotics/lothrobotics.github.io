@@ -625,8 +625,8 @@
     }
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
+@media screen and (max-width: 1366px) {
+  .welcomediv {
     background-attachment: scroll;
   }
 }
