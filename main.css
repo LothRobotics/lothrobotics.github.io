@@ -5,6 +5,8 @@
 
 :root {
     --header-height: 100px;
+    --default-color: black;
+    --default-link-color: black;
 }
 
 .headerbackground {
@@ -35,9 +37,7 @@
 }
 
 .body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #d3d3d3;
     margin: 0px;
     margin-top: -20px;
     overflow-x: hidden;
@@ -87,7 +87,7 @@
 .insideheader {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--default-color);
     font-size: 50px;
     text-align: center;
     margin-top: 100px;
@@ -96,7 +96,7 @@
 .insideheaderlight {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.699);
+    color: rgba(27, 27, 27, 0.699);
     font-size: 35px;
     text-align: center;
     margin-top: 90px;
@@ -106,7 +106,7 @@
 .paragraph {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--default-color);
     font-size: 25px;
     text-align: center;
 }
@@ -114,7 +114,7 @@
 .longparagraph {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--default-color);
     font-size: 25px;
     text-align: left;
     margin-left: 160px;
@@ -147,7 +147,7 @@
 .name {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--default-color);
     font-size: 25px;
     text-align: center;
     justify-content: center;
@@ -156,7 +156,7 @@
 .persondescription {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.76);
+    color: black;
     font-size: 20px;
     text-align: center;
     justify-content: center;
@@ -170,7 +170,7 @@
 }
 
 .footerdiv {
-    background-color: black;
+    background-color: #b3b3b3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +182,7 @@
 .footertext {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--default-color);
     font-size: 17px;
     margin-top: 20px;
 }
@@ -190,6 +190,12 @@
 .footericon {
     margin: 10px;
     font-size: 30px;
+    color: var(--default-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--default-link-color)
 }
 
 @media screen and (max-width:1130px) {
@@ -233,6 +239,7 @@
         margin-top: 70px;
         letter-spacing: 0.5px;
         line-height: 35px;
+        color: var(--default-color)
     }
     
     .teamcards {
@@ -264,7 +271,7 @@
     }
     
     .footertext {
-        color: white;
+        color: var(--default-color);
         font-size: 17px;
         margin-top: 20px;
     }
@@ -349,7 +356,7 @@
     }
     
     .footertext {
-        color: white;
+        color: var(--default-color);
         font-size: 15px;
         margin-top: 20px;
     }
@@ -434,7 +441,7 @@
     }
     
     .footertext {
-        color: white;
+        color: var(--default-color);
         font-size: 15px;
         margin-top: 20px;
     }
@@ -512,7 +519,7 @@
     }
     
     .footerdiv {
-        background-color: black;
+        background-color: rgb(54, 54, 54)d3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -521,7 +528,7 @@
     }
     
     .footertext {
-        color: white;
+        color: var(--default-color);
         font-size: 15px;
         margin-top: 20px;
     }
@@ -629,4 +636,23 @@
   .welcomediv {
     background-attachment: scroll;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: #161616;
+    }
+    :root {
+        --default-color: white;
+        --default-link-color: white;
+    }
+    .persondescription {
+        color: #ffffffc2
+    }
+    .insideheaderlight {
+        color: rgba(255, 255, 255, 0.699)
+    }
+    .footerdiv {
+        background-color: #202020;
+    }
 }
