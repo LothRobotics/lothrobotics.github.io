@@ -28,7 +28,7 @@
 }
 
 .headerbutton {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
     margin-right: 50px;
@@ -65,7 +65,7 @@
 }
 
 .welcomeh1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 50px;
@@ -85,7 +85,7 @@
 }
 
 .insideheader {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--default-color);
     font-size: 50px;
@@ -94,7 +94,7 @@
 }
 
 .insideheaderlight {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: rgba(27, 27, 27, 0.699);
     font-size: 35px;
@@ -104,7 +104,7 @@
 }
 
 .paragraph {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--default-color);
     font-size: 25px;
@@ -112,7 +112,7 @@
 }
 
 .longparagraph {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--default-color);
     font-size: 25px;
@@ -120,7 +120,6 @@
     margin-left: 160px;
     margin-right: 160px;
     margin-top: 100px;
-    letter-spacing: 1px;
     line-height: 35px;
 }
 
@@ -145,7 +144,7 @@
 }
 
 .name {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--default-color);
     font-size: 25px;
@@ -154,7 +153,7 @@
 }
 
 .persondescription {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -180,7 +179,7 @@
 }
 
 .footertext {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: var(--default-color);
     font-size: 17px;
@@ -196,6 +195,32 @@
 .link {
     text-decoration: none;
     color: var(--default-link-color)
+}
+
+.robotcard {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background-color: #b3b3b3;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.robotname {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--default-color);
+    font-size: 30px;
+}
+
+.robotcardsdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.robotpicture {
+    
 }
 
 @media screen and (max-width:1130px) {
@@ -237,7 +262,6 @@
         margin-left: 140px;
         margin-right: 140px;
         margin-top: 70px;
-        letter-spacing: 0.5px;
         line-height: 35px;
         color: var(--default-color)
     }
@@ -322,7 +346,6 @@
         margin-left: 120px;
         margin-right: 120px;
         margin-top: 60px;
-        letter-spacing: 0.3px;
         line-height: 27px;
     }
     
@@ -407,7 +430,6 @@
         margin-left: 100px;
         margin-right: 100px;
         margin-top: 60px;
-        letter-spacing: 0.3px;
         line-height: 27px;
     }
     
@@ -494,7 +516,6 @@
         margin-left: 90px;
         margin-right: 90px;
         margin-top: 60px;
-        letter-spacing: 0.3px;
         line-height: 27px;
     }
     
@@ -519,10 +540,7 @@
     }
     
     .footerdiv {
-        background-color: #c7c7c7;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+ 
         margin-top: 90px;
         padding-bottom: 20px;
     }
@@ -560,7 +578,6 @@
         margin-left: 60px;
         margin-right: 60px;
         margin-top: 60px;
-        letter-spacing: 0.3px;
         line-height: 27px;
     }
 
