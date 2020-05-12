@@ -10,15 +10,15 @@
 }
 
 .headerbackground {
-    background: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    margin: 10px;
+    margin-top: 20px;
     overflow-x: hidden;
     height: var(--header-height);
+    background: linear-gradient(180deg, rgba(0,0,0,0.68531162464986) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .headerlogo {
