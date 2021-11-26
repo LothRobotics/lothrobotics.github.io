@@ -63,6 +63,7 @@
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 		  alert("Mobil cihazlar henüz desteklenmiyor. Lütfen daha sonra tekrar deneyin.")
+		  window.location.href = "/"
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
