@@ -64,10 +64,9 @@
 		<a href="Atolye-1.0.apk" style="color: rgb(0, 151, 201);">Hemen indirin ></a>
 	</div>
 	<div id="alert" class="alert">
-		<p>Tam ekrana geçmek için herhangi bir yere tıklayın.</p>
 		<p>İmleci serbest bırakmak için Esc tuşuna basın.</p>
 	</div>
-    <script src="Build/Files.loader.js"></script>
+    <script src="Build/WebGL.loader.js"></script>
     <script>
 		if (/Android/i.test(navigator.userAgent)) {
 			document.getElementById("androidalert").style.display = "flex"
@@ -75,13 +74,13 @@
 			document.getElementById("mobilealert").style.display = "flex"
 		} else {
 		createUnityInstance(document.querySelector("#unity-canvas"), {
-			dataUrl: "Build/Files.data",
-			frameworkUrl: "Build/Files.framework.js",
-			codeUrl: "Build/Files.wasm",
+			dataUrl: "Build/WebGL.data",
+			frameworkUrl: "Build/WebGL.framework.js",
+			codeUrl: "Build/WebGL.wasm",
 			streamingAssetsUrl: "StreamingAssets",
-			companyName: "DefaultCompany",
+			companyName: "Loth Robotics",
 			productName: "Atölye",
-			productVersion: "0.1",
+			productVersion: "1.0",
 			// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
 			// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
 		}).then((unityInstance) => {
