@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yoklama | Loth Robotics</title>
+	<script src="main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+		* {
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			box-sizing: border-box;
+			outline: none;
+		}
+		html {
+			width: 100%;
+			background-color: black;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+		body {
+			width: 100%;
+			max-width: 600px;
+			background-color: black;
+		}
+		input[type="text"] {
+			background: black;
+			border: 3px solid white;
+			padding: 5px;
+		}
+		button {
+			background: black;
+			border: 3px solid white;
+			padding: 5px;
+			margin-top: 20px;
+		}
+		#secondpage, #thirdpage {
+			display: none;
+		}
+		div {
+			background-color: black;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="firstpage">
+		<h1>Yoklama</h1>
+		<input type="text" id="eventname" placeholder="Etkinlik adı...">
+		<br>
+		<button onclick="start()">Üye alımını başlat</button>
+	</div>
+	<div id="secondpage">
+		<h1 id="eventheader">Yoklama</h1>
+		<hr>
+	</div>
+	<div id="thirdpage">
+		<h1>Yoklama Sona Erdi</h1>
+		<button onclick="savepdf()">Özeti PDF olarak indir</button>
+	</div>
+</body>
+</html>
