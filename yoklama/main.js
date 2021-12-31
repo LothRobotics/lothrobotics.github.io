@@ -2,7 +2,7 @@
 
 var eventName
 
-var team = ["Tuna Çalışkan","Ahmet KANKILIÇ","Efe Aslan","Vefa Ceylan","Kadir Kayra Balaban","Talha Batuhan CEYLAN","Sena Vardar","Deniz Arda Kozak","Erdem UYAN","Ahmet Doğu Tuna","Elifnaz Çolfaoğlu","Zeynep Güler","Hilal Tekin","Halit Hamza Şeker","Yavuz Selim Şeremetli","Arhan kuzey girgin","Muhammed Bilal Öztürk","Abdullah Efe Atabek","Muhammed Emir Yıldırım","Burak Nezir ALTUN","Elif Ünal","Emir Karabulut","Eray Güleşen","Arda dönmez","Ebrar Dinç","Deniz Yergin","Efe Aslan","Bora Özüdoğru","Yusuf Adıgüzel","İbrahim Volkan Gök"]
+var team = ["Abdullah Efe Atabek", "Ahmet Doğu Tuna", "Ahmet Furkan Tekin", "Ahmet Kankılıç", "Ahmet Yahya Turhan", "Arda Akarsu", "Arhan Kuzey Girgin", "Ayşe Ümmühan Yakıcı", "Bekir Efe Kaya", "Bora Özüdoğru", "Buğra Aydın", "Burak Nezir Altun", "Deniz Arda Kozak", "Deniz Yergin", "Doruk Doğru", "Ebrar Dinç", "Efe Aslan", "Efe Aslan Gürkan", "Elif Çolafoğlu", "Elif Ünal", "Emir Karabulut", "Enes Salih Sezer", "Eray Güleşen", "Erdem Uyan", "Halit Hamza Şeker", "Hilal Tekin", "İbrahim Volkan Gök", "İremnur Özcan", "Kadir Bayra Balaban", "Kağan Zengin", "Mehmet Akif Albayrak", "Muhammed Bilal Öztürk", "Özgür Ozan Güralp", "Seda Vardar", "Sueda Aydın", "Turan Doruk Cerit", "Vefa Ceylan", "Yusuf Adıgüzel", "Yusuf Koymatoğlu", "Zeynep Güler", "Talha Batuhan CEYLAN","Yavuz Selim Şeremetli"]
 
 function start() {
 	eventName = document.getElementById("eventname").value
