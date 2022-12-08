@@ -1,4 +1,6 @@
-*::before::after {
+/*Standart Elements Start*/
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,3 +10,35 @@ html {
   width: 100vw;
   height: auto;
 }
+
+/*Standart Elements End*/
+
+/*Header Start*/
+
+header{
+  position: fixed;
+  top: 0;
+}
+
+img.header__image{
+  width: 15%;
+  height: auto;
+}
+
+/*Header End*/
+
+/*Section Hero Start*/
+
+section.section-hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      rgb(255, 255, 255, 0.6),
+      rgb(255, 255, 255, 0.6)
+    ),
+    url(../../components/images/section-hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Section Hero End*/
