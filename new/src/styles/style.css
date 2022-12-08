@@ -8,21 +8,35 @@
 
 html {
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 /*Standart Elements End*/
 
 /*Header Start*/
 
-header{
+header {
+  width: 100vw;
+  height: 20rem;
   position: fixed;
   top: 0;
+  background: linear-gradient(180deg, rgb(53, 53, 53) 0%, rgba(217, 217, 217, 0) 100%);
 }
 
-img.header__image{
+img.header__image {
   width: 15%;
   height: auto;
+}
+
+li.header__list-item {
+  display: block;
 }
 
 /*Header End*/
