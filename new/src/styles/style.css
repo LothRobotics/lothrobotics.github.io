@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -23,7 +24,7 @@ body {
 /*Header Start*/
 
 header {
-  padding: 0 30rem;
+  padding: 0 40rem;
   width: 100vw;
   height: 20rem;
   position: fixed;
@@ -44,7 +45,7 @@ img.header__image {
   margin-left: 0;
 }
 
-nav.header__navigation{
+nav.header__navigation {
   display: flex;
   align-self: center;
   justify-self: flex-end;
@@ -53,7 +54,7 @@ nav.header__navigation{
 ul.header__list {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 li.header__list-item {
@@ -81,6 +82,8 @@ section.section-hero {
     url(../../components/images/section-hero.png);
   background-size: cover;
   background-position: center;
+  display: grid;
+  place-items: center;
 }
 
 /*Section Hero End*/
