@@ -9,7 +9,7 @@
 html {
   width: 100vw;
   height: 100vh;
-  font-size: 10px;
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ body {
 /*Header Start*/
 
 header {
-  padding: 0 28rem;
+  padding: 0 30rem;
   width: 100vw;
   height: 20rem;
   position: fixed;
@@ -35,6 +35,7 @@ header {
   );
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 img.header__image {
