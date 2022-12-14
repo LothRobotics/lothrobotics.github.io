@@ -111,3 +111,9 @@ p.section-hero__slogan{
   display: grid;
   text-align: right;
 }
+
+div.testimonials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
