@@ -95,26 +95,45 @@ div.section-hero__content {
   width: 100vw;
   height: 10rem;
   padding: 0 40rem;
+  gap: 3rem;
 }
 
 div.content__head {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 45rem;
 }
 
-h1.section-hero__heading{
+h1.section-hero__heading {
   display: grid;
   text-align: flex-start;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
-p.section-hero__slogan{
+p.section-hero__slogan {
   display: grid;
   text-align: right;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
-div.testimonials{
+div.testimonials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+button.testimonials__button {
+  background: transparent;
+  border: none;
+}
+
+button.testimonials__button img {
+  height: auto;
+  width: 5rem;
+}
+
+p.testimonials__text {
+  font-size: 3rem;
 }
