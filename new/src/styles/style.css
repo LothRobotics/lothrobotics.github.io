@@ -87,3 +87,27 @@ section.section-hero {
 }
 
 /*Section Hero End*/
+
+div.section-hero__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 10rem;
+  padding: 0 40rem;
+}
+
+div.content__head {
+  display: flex;
+  flex-direction: row;
+}
+
+h1.section-hero__heading{
+  display: grid;
+  text-align: flex-start;
+}
+
+p.section-hero__slogan{
+  display: grid;
+  text-align: right;
+}
