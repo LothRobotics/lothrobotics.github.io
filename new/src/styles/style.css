@@ -79,7 +79,7 @@ section.section-hero {
       rgb(255, 255, 255, 0.6),
       rgb(255, 255, 255, 0.6)
     ),
-    url(../../components/images/section-hero.png);
+    url(../../components/section-hero.png);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -100,6 +100,7 @@ div.section-hero__content {
 div.content__head {
   display: flex;
   flex-direction: row;
+  gap: 10rem;
 }
 
 h1.section-hero__heading{
