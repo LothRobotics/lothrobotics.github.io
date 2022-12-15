@@ -13,18 +13,18 @@ function windowOnload() {
 
 function changeTestimonialsForwards() {
   if (counter < testimonialsListLength - 1) {
-    console.log(counter)
+    console.log(counter);
     counter++;
-    console.log(counter)
+    console.log(counter);
     testimonialsText.innerHTML = testimonialsList[counter];
   }
 }
 
 function changeTestimonialsBackwards() {
   if (counter > 0) {
-    console.log(counter)
+    console.log(counter);
     counter--;
-    console.log(counter)
+    console.log(counter);
     testimonialsText.innerHTML = testimonialsList[counter];
   }
 }
