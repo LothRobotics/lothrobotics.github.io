@@ -14,7 +14,7 @@
     />
     <script src="./src/script/main.js" defer></script>
   </head>
-  <body>
+  <body onload="windowOnload()">
     <header>
       <img
         src="./components/lothlogo.svg"
@@ -52,16 +52,24 @@
           </p>
         </div>
         <div class="testimonials">
-          <button class="testimonials__button testimonials__button--backwards">
+          <button
+            class="testimonials__button testimonials__button--backwards"
+            reference="backwards"
+            onclick="changeTestimonialsBackwards()"
+          >
             <img
               src="./components/button-backwards.svg"
               alt="button backwards"
             />
           </button>
           <p class="testimonials__text" id="testimonialsText">
-            "It's not about doing, it's all about making"
+            'It's not about doing, it's all about making'
           </p>
-          <button class="testimonials__button testimonials__button--towards" onclick="changeTestimonials()">
+          <button
+            class="testimonials__button testimonials__button--towards"
+            reference="forwards"
+            onclick="changeTestimonialsForwards()"
+          >
             <img src="./components/button-forwards.svg" alt="button forwards" />
           </button>
         </div>
