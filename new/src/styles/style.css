@@ -143,7 +143,7 @@ main {
   height: 100vh;
   width: 100vw;
   background-color: rgb(222, 222, 222, 209);
-  padding: 12rem 0;
+  padding: 15rem 0;
 }
 
 /*About Us Start*/
@@ -154,7 +154,7 @@ section.section-about-us {
   align-items: center;
   width: 100vw;
   height: auto;
-  padding: 0 40rem;
+  padding: 0 25rem;
   gap: 4rem;
 }
 
@@ -163,7 +163,7 @@ h2.section-about-us__heading {
   font-weight: 700;
 }
 
-p.section-about-us__text{
+p.section-about-us__text {
   text-align: center;
   font-size: 2em;
   font-weight: 500;
