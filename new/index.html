@@ -23,9 +23,11 @@
   <body onload="windowOnload()">
     <header>
       <img
-        src="./components/lothlogo.svg"
+        src="./components/lothlogo.webp"
         alt="Loth Robotics Logo"
         class="header__image"
+        width="300"
+        height="80"
       />
       <nav class="header__navigation">
         <ul class="header__list">
@@ -62,6 +64,7 @@
             class="testimonials__button testimonials__button--backwards"
             reference="backwards"
             onclick="changeTestimonialsBackwards()"
+            aria-label="Move backwards in testimonials"
           >
             <svg
               class="testimonials__icon"
@@ -84,6 +87,7 @@
             class="testimonials__button testimonials__button--towards"
             reference="forwards"
             onclick="changeTestimonialsForwards()"
+            aria-label="Move backwards in testimonials"
           >
             <svg
               class="testimonials__icon"
