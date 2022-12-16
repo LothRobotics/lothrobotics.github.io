@@ -79,7 +79,7 @@ section.section-hero {
       rgb(255, 255, 255, 0.6),
       rgb(255, 255, 255, 0.6)
     ),
-    url(../../components/section-hero.png);
+    url(../../components/section-hero.webp);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -149,7 +149,7 @@ main {
 
 /*About Us Start*/
 
-section.section-about-us{
+section.section-about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
