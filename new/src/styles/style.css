@@ -50,9 +50,10 @@ header {
 }
 
 img.header__image {
-  width: 30%;
+  max-width: 30%;
   height: auto;
   margin-left: 0;
+  object-fit: cover;
 }
 
 nav.header__navigation {
