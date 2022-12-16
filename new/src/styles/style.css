@@ -27,7 +27,7 @@ body {
   text-align: center;
   font-size: 2em;
   font-weight: 500;
-} 
+}
 
 /*Standart Elements End*/
 
@@ -135,9 +135,8 @@ button.testimonials__button {
   border: none;
 }
 
-button.testimonials__button img {
-  height: auto;
-  width: 5rem;
+.testimonials__icon {
+  font-size: 4.8rem;
 }
 
 p.testimonials__text {
