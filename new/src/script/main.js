@@ -15,7 +15,7 @@ function changeTestimonialsForwards() {
   if ( counter < testimonialsListLength - 1 ) {
     counter++;
   }else{
-    counter = testimonialsListLength -1
+    counter = 0;
   }
   testimonialsText.innerHTML = testimonialsList[counter];
 }
@@ -24,7 +24,7 @@ function changeTestimonialsBackwards() {
   if ( counter > 0 ) {
     counter--;
   }else{
-    counter = 0;
+    counter = testimonialsListLength - 1;
   }
   testimonialsText.innerHTML = testimonialsList[counter]
 }
