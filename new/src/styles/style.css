@@ -185,4 +185,14 @@ section.section-projects {
   gap: 4rem;
 }
 
+div.teams-container{
+  width: 100vw;
+  height: auto;
+  padding: 0 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*Projects End*/
