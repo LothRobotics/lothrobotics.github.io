@@ -1,0 +1,35 @@
+/*Classic Elements*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.0;
+  min-height: 100vh; }
+
+.header {
+  padding: 0 40rem;
+  width: 100vw;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, #353535 0%, rgba(217, 217, 217, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/*Section Hero*/
+body {
+  background-image: url(../../../../components/section-hero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }

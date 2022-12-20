@@ -1,0 +1,15 @@
+{
+  "name": "lothrobotics",
+  "version": "1.0.0",
+  "description": "Sakıp Sabancı Anatolion High School Robotics Club Loth Robotics",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w"
+  },
+  "author": "K4MiK4ZE7 (Halit Hamza Şeker)",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0"
+  }
+}
