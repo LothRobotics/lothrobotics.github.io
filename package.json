@@ -1,0 +1,22 @@
+{
+  "name": "lothrobotics",
+  "version": "1.0.0",
+  "description": "Our website",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass": "node-sass "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LothRobotics/lothrobotics.github.io.git"
+  },
+  "author": "K4MiK4ZE7 (Halit Hamza Şeker)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LothRobotics/lothrobotics.github.io/issues"
+  },
+  "homepage": "https://github.com/LothRobotics/lothrobotics.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
