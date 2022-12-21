@@ -4,7 +4,7 @@
   "description": "Our website",
   "main": "index.js",
   "scripts": {
-   "compile:sass": "node-sass "
+   "compile:sass": "node-sass ./src/styles/sass/main.scss ./src/styles/css/style.css"
   },
   "repository": {
     "type": "git",
