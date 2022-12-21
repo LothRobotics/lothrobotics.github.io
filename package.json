@@ -4,7 +4,7 @@
   "description": "Our website",
   "main": "index.js",
   "scripts": {
-   "compile:sass": "node-sass ./src/styles/sass/main.scss ./src/styles/css/style.css"
+    "compile:sass": "node-sass sass /src/styles/sass/main.scss style /src/styles/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/LothRobotics/lothrobotics.github.io/issues"
   },
-  "homepage": "https://github.com/LothRobotics/lothrobotics.github.io#readme",
+  "homepage": "https://github.com/LothRobotics/lothrobotics.github.io",
   "devDependencies": {
     "node-sass": "^8.0.0"
   }
