@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Loth Robotics | Atölye</title>
+	<script src="jquery.min.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+		div {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: black;
+			color: white; 
+			font-family: 'Montserrat', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 30px;
+			display: none;
+			margin: 0;
+		}
+		canvas {
+			margin: 0;
+		}
+		img {
+			width: 400px;
+		}
+		.alert {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 430px;
+			height: fit-content;
+			background: rgba(0, 0, 0, 0.596);
+			padding: 5px;
+			margin: 10px;
+			transition: .5s;
+		}
+		.alert p {
+			margin: 5px;
+		}
+	</style>
+  </head>
+  <body style="text-align: center; margin: 0;">
+    <canvas id="unity-canvas" style="width: 100vw; height: 100vh; background: #231F20"></canvas>
+	<div id="loading" style="display: flex;">
+		<a href="/"><img src="lothlogo.svg" alt=""></a>
+		<br><br>
+		<h3>Yükleniyor</h3>
+		<p>Bu işlem biraz zaman alabilir</p>
+	</div>
+	<div id="mobilealert">
+		<a href="/"><img src="lothlogo.svg" alt=""></a>
+		<br><br>
+		<h3>Mobil cihazlar henüz desteklenmemektedir.</h3>
+		<p>Eğer bir Android cihazınız varsa, siteyi bu cihazınızdan açarak deneyimin .apk sürümünü indirebilirsiniz.</p>
+	</div>
+	<div id="androidalert">
+		<a href="/"><img src="lothlogo.svg" alt=""></a>
+		<br><br>
+		<h3>Loth Robotics | Atölye</h3>
+		<p>Yeni atölyemizi deneyimlemek için Android uygulamamızı kullanın.</p>
+		<a href="Atolye-1.0.apk" style="color: rgb(0, 151, 201);">Hemen indirin ></a>
+	</div>
+	<div id="alert" class="alert">
+		<p>İmleci serbest bırakmak için Esc tuşuna basın.</p>
+	</div>
+    <script src="Build/WebGL.loader.js"></script>
+    <script>
+		if (/Android/i.test(navigator.userAgent)) {
+			document.getElementById("androidalert").style.display = "flex"
+		} else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+			document.getElementById("mobilealert").style.display = "flex"
+		} else {
+		createUnityInstance(document.querySelector("#unity-canvas"), {
+			dataUrl: "Build/WebGL.data",
+			frameworkUrl: "Build/WebGL.framework.js",
+			codeUrl: "Build/WebGL.wasm",
+			streamingAssetsUrl: "StreamingAssets",
+			companyName: "Loth Robotics",
+			productName: "Atölye",
+			productVersion: "1.0",
+			// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+			// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+		}).then((unityInstance) => {
+        	document.getElementById("loading").style.display = "none";
+			setTimeout(function(){ $("#alert").fadeIn() }, 2500);
+			setTimeout(function(){ $("#alert").fadeOut() }, 6500);
+        }).catch((message) => {
+			alert("Bir hata oluştu: \n" + message);
+        });
+		}
+    </script>
+  </body>
+</html>
