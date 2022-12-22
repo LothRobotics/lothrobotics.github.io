@@ -13,8 +13,22 @@ body {
   font-size: 1.6rem;
   min-height: 100vh; }
 
+/* Header */
+.header {
+  display: flex;
+  width: 100vw;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40rem; }
+
+.navigation {
+  width: 100%; }
+
 /*Section Hero*/
 body {
-  background-image: url("../../../../components/Ultra-HD-2.webp");
+  background-image: url("../../../../components/section-hero.webp");
   background-size: cover;
   background-position: center; }
