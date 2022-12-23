@@ -6,28 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="./src/styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/script/main.js" defer></script>
   </head>
   <body>
     <header class="header">
+      <img
+        src="./components/loth-logo.webp"
+        alt="Loth Robotics Club Logo"
+        class="header__logo"
+      />
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a href="" class="navigation__link">About Us</a>
+            <a href="#about-us" class="navigation__link">About Us</a>
           </li>
           <li class="navigation__list-item">
-            <a href="" class="navigation__link">Projects</a>
+            <a href="#projects" class="navigation__link">Projects</a>
           </li>
           <li class="navigation__list-item">
-            <a href="" class="navigation__link">Our Team</a>
+            <a href="#teams" class="navigation__link">Our Team</a>
           </li>
           <li class="navigation__list-item">
-            <a href="" class="navigation__link">Partners</a>
+            <a href="#partners" class="navigation__link">Partners</a>
           </li>
           <li class="navigation__list-item">
-            <a href="" class="navigation__link">Contact</a>
+            <a href="#contact" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+    <section class="section-hero">
+      <div class="section-hero__testimonials-div">
+        <h1 class="testimonials-div__heading heading-primary">
+          Robotics Club Of Sakıp Sabancı Anatolian High School
+        </h1>
+        <p class="testimonials-div__text heading-primary">
+          "It's not about doing it's all about making"
+        </p>
+      </div>
+      <div class="section-hero__slogan-div">
+        <button class="slogan-div__chevron-button chevron-backwards">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6Z"
+            />
+          </svg>
+        </button>
+        <p class="section-hero__slogan text-primary" id="slogan">
+          "It's not about doing it's all about making"
+        </p>
+        <button class="slogan-div__chevron-button chevron-forwards">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
