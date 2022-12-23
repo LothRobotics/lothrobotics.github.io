@@ -27,17 +27,29 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 30rem;
+  gap: 35rem;
+}
+
+.testimonials-div__heading{
+  min-width: 50%;
 }
 
 .section-hero__slogan-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .slogan-div__chevron-button {
   background: transparent;
   border: none;
-  font-size: 4rem;
+  font-size: 8rem;
+  display: block;
+}
+
+.slogan-div__chevron-button svg{
+  display: block;
+  line-height: 1.0;
 }
