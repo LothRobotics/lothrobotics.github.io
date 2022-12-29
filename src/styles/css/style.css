@@ -26,7 +26,7 @@ body {
 .main {
   width: 100%;
   min-height: 100vh;
-  padding: 0rem 20rem;
+  padding: 0rem 30rem;
   background-color: #dedede; }
 
 /* Header */
@@ -107,4 +107,4 @@ body {
 /*Section About*/
 .section-about {
   width: 100%;
-  padding: 4rem 0; }
+  padding: 15rem 0; }
