@@ -3,6 +3,8 @@ let counter = 0;
 const sloganList = [
   '"It is not about doing it is all about making"',
   '"Great power comes with great responsiblty"',
+  '"Just do it"',
+  '"It is what it is"'
 ];
 const listLength = sloganList.length;
 
